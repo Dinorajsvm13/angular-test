@@ -30,4 +30,4 @@ jobs:
           branch: gh-pages
           folder: dist/angular
           clean: true
-            token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
