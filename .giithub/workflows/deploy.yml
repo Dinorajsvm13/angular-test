@@ -3,7 +3,7 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change to your main branch if different
+      - main  # Change this if your main branch has a different name
 
 jobs:
   build-and-deploy:
@@ -27,6 +27,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main
-          folder: dist/angular
+          branch: gh-pages  # ✅ Change from 'main' to 'gh-pages'
+          folder: dist/angular  # ✅ Ensure this is the correct build output folder
           clean: true
