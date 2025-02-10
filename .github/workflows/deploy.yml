@@ -27,6 +27,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # ✅ Change from 'main' to 'gh-pages'
-          folder: dist/angular  # ✅ Ensure this is the correct build output folder
+          branch: gh-pages
+          folder: dist/angular
           clean: true
