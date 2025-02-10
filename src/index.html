@@ -8,6 +8,13 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const redirect = urlParams.get('redirect');
+    if (redirect) {
+      window.location.href = redirect; // Redirects user to malicious site
+    }
+  </script>
+  
 </body>
 </html>
